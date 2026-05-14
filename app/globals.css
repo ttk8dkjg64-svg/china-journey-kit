@@ -1,0 +1,30 @@
+@import "../assets/styles.css";
+
+.next-main {
+  min-height: 70vh;
+}
+
+.external-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .55rem .85rem;
+  margin-top: .8rem;
+}
+
+.destination-card .card-link {
+  display: flex;
+  width: fit-content;
+}
+
+.simple-list {
+  display: grid;
+  gap: .75rem;
+  margin: 1rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.simple-list li {
+  border-bottom: 1px solid var(--line);
+  padding: .75rem 0;
+}

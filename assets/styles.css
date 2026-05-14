@@ -233,7 +233,7 @@ img {
   border-radius: 14px;
   background:
     linear-gradient(180deg, rgba(255,253,248,.86), rgba(255,253,248,.96)),
-    url("site-concept.png") center / cover;
+    url("/assets/site-concept.png") center / cover;
   border: 1px solid rgba(255,255,255,.58);
 }
 
