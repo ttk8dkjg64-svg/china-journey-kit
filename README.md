@@ -1,6 +1,6 @@
 # China Journey Kit
 
-Static travel guide site for international visitors planning China trips.
+Static travel guide site for travelers planning China trips.
 
 ## Local preview
 
