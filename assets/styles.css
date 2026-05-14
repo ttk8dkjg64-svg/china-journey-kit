@@ -331,9 +331,11 @@ section,
 .card-link {
   display: inline-flex;
   margin-top: .8rem;
+  margin-right: .85rem;
   color: var(--jade-2);
   font-weight: 820;
   text-decoration: none;
+  line-height: 1.25;
 }
 
 .tag-list {
