@@ -1,8 +1,21 @@
 import Link from "next/link";
 import { DestinationCard, EssentialCard } from "@/components/Cards";
+import { HeroDestinationCarousel } from "@/components/HeroDestinationCarousel";
 import { destinations, essentials } from "@/lib/data";
 
 export default function HomePage() {
+  const planningPath = [
+    ["Arrival Setup", "Get mobile data, payment apps, hotel address, and airport-to-city transport ready before the flight."],
+    ["Route Shape", "Choose a realistic city order around high-speed rail, flight time, weather, and recovery days."],
+    ["Ticket Timing", "Reserve passport-linked attractions early and keep official links close for policy checks."],
+    ["Local Backup", "Know when to use hotel help, guided days, private transfers, or vetted booking support."]
+  ];
+  const tripStyles = [
+    ["First China Trip", "Beijing, Xi'an, Shanghai, then one nature stop if the schedule allows.", "/itineraries"],
+    ["Scenery Focus", "Guilin, Zhangjiajie, Yunnan, and slower transfers that protect weather flexibility.", "/destinations"],
+    ["Food & Culture", "Chengdu, Xi'an, hutongs, tea houses, markets, museums, and evening walks.", "/experiences/culture-food"]
+  ];
+
   return (
     <>
       <section className="hero">
@@ -20,7 +33,18 @@ export default function HomePage() {
               <div className="stat"><strong>0</strong><span>empty navigation links</span></div>
             </div>
           </div>
-          <div className="hero-panel" aria-label="Great Wall and travel planning visual" />
+          <HeroDestinationCarousel destinations={destinations} />
+        </div>
+      </section>
+
+      <section className="quick-strip" aria-label="Fast planning links">
+        <div className="wrap quick-grid">
+          {essentials.map((essential) => (
+            <Link className="quick-card" href={`/essentials/${essential.slug}`} key={essential.slug}>
+              <strong>{essential.title}</strong>
+              <span>{essential.summary}</span>
+            </Link>
+          ))}
         </div>
       </section>
 
@@ -39,6 +63,26 @@ export default function HomePage() {
         </div>
       </section>
 
+      <section className="planning-path">
+        <div className="wrap">
+          <div className="section-head">
+            <div>
+              <h2>A Practical Planning Path</h2>
+              <p>Move from uncertainty to a bookable China trip without losing time to app setup, station logistics, or ticket rules.</p>
+            </div>
+          </div>
+          <div className="path-grid">
+            {planningPath.map(([title, copy], index) => (
+              <article className="path-step" key={title}>
+                <span>{String(index + 1).padStart(2, "0")}</span>
+                <h3>{title}</h3>
+                <p>{copy}</p>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <section className="band">
         <div className="wrap">
           <div className="section-head">
@@ -49,6 +93,26 @@ export default function HomePage() {
           </div>
           <div className="grid cols-3">
             {essentials.map((essential) => <EssentialCard key={essential.slug} essential={essential} />)}
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div className="wrap">
+          <div className="section-head">
+            <div>
+              <h2>Choose Your Trip Style</h2>
+              <p>Use a travel style as the filter, then pick destinations and services that reduce friction instead of adding more decisions.</p>
+            </div>
+          </div>
+          <div className="grid cols-3">
+            {tripStyles.map(([title, copy, href]) => (
+              <Link className="style-card" href={href} key={title}>
+                <h3>{title}</h3>
+                <p>{copy}</p>
+                <span>Explore route</span>
+              </Link>
+            ))}
           </div>
         </div>
       </section>
