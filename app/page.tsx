@@ -13,7 +13,10 @@ export default function HomePage() {
   const tripStyles = [
     ["First China Trip", "Beijing, Xi'an, Shanghai, then one nature stop if the schedule allows.", "/itineraries"],
     ["Scenery Focus", "Guilin, Zhangjiajie, Yunnan, and slower transfers that protect weather flexibility.", "/destinations"],
-    ["Food & Culture", "Chengdu, Xi'an, hutongs, tea houses, markets, museums, and evening walks.", "/experiences/culture-food"]
+    ["Food & Culture", "Chengdu, Guangzhou, Xi'an, hutongs, tea houses, markets, museums, and evening walks.", "/experiences/culture-food"],
+    ["Greater Bay Route", "Guangzhou, Shenzhen, Hong Kong, Macau links, Cantonese food, design, and coastal days.", "/destinations/guangzhou"],
+    ["Silk Road History", "Dunhuang, Xi'an, desert landscapes, caves, museums, and slower western China logistics.", "/destinations/dunhuang"],
+    ["Winter China", "Harbin ice season, snow scenery, warm food stops, and realistic cold-weather pacing.", "/destinations/harbin"]
   ];
 
   return (
@@ -28,7 +31,7 @@ export default function HomePage() {
               <Link className="button" href="/essentials">Solve payments, SIM and trains</Link>
             </div>
             <div className="stat-strip">
-              <div className="stat"><strong>8</strong><span>high-demand destinations</span></div>
+              <div className="stat"><strong>{destinations.length}</strong><span>high-demand destinations</span></div>
               <div className="stat"><strong>6</strong><span>arrival pain points solved</span></div>
               <div className="stat"><strong>0</strong><span>empty navigation links</span></div>
             </div>

@@ -718,6 +718,25 @@ section,
 .article p, .article li { color: var(--muted); }
 .article a { color: var(--jade-2); font-weight: 760; }
 
+.faq-list {
+  display: grid;
+  gap: 1rem;
+}
+
+.faq-item {
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 1rem;
+}
+
+.faq-item:last-child {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+
+.faq-item h2 {
+  font-size: clamp(1.35rem, 2vw, 2rem);
+}
+
 .sidebar {
   position: sticky;
   top: 96px;

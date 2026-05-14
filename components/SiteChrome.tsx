@@ -58,6 +58,7 @@ export function Footer() {
           <Link href="/destinations">Destinations</Link>
           <Link href="/itineraries">Itineraries</Link>
           <Link href="/experiences/culture-food">Culture & Food</Link>
+          <Link href="/faq">FAQ</Link>
         </div>
         <div>
           <h4>Essentials</h4>

@@ -8,6 +8,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/destinations",
     "/essentials",
     "/itineraries",
+    "/faq",
     "/experiences/culture-food",
     "/deals/partner",
     "/company/contact",

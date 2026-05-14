@@ -147,6 +147,134 @@ export const destinations: Destination[] = [
       { title: "What to prepare", body: ["Layer clothing because altitude and evenings change the temperature. Plan slower transfers than the map suggests. Check hotel location carefully in old towns."] },
       { title: "Best for", body: ["Travelers who want China beyond the megacities and can spare at least five to seven days."] }
     ]
+  },
+  {
+    slug: "hangzhou",
+    name: "Hangzhou",
+    image: "https://commons.wikimedia.org/wiki/Special:FilePath/West_Lake,_Hangzhou.jpg?width=1600",
+    alt: "Hangzhou West Lake scenery",
+    summary: "West Lake, tea villages, temples, canals, and an easy high-speed rail add-on from Shanghai.",
+    tags: ["Shanghai add-on", "West Lake"],
+    facts: [["Base city", "Hangzhou"], ["Time needed", "1-3 days"], ["Best season", "Spring and autumn"], ["Transport", "High-speed rail"]],
+    externalLabel: "Hangzhou tourism portal",
+    externalUrl: "https://wgly.hangzhou.gov.cn/",
+    sections: [
+      { title: "Why go", body: ["Hangzhou works beautifully as a soft scenic break after Shanghai. West Lake is the headline, but the stronger trip usually adds Lingyin Temple, Longjing tea villages, canal areas, and a slow evening around the lake rather than treating the city as a rushed photo stop."] },
+      { title: "How to plan it", body: ["A one-day trip from Shanghai is possible by high-speed rail, but one or two nights gives the lake more breathing room. Stay near West Lake, Wulin Square, or a metro corridor so rain, traffic, and crowds do not eat the day."] },
+      { title: "Ticket and route tips", body: ["West Lake itself is open-access, while boats, temples, museums, performances, and tea experiences may have separate tickets. Weekends and holidays are crowded, so start early and use hotel help for tea village transfers if you want a calmer day."] }
+    ]
+  },
+  {
+    slug: "suzhou",
+    name: "Suzhou",
+    image: "https://commons.wikimedia.org/wiki/Special:FilePath/Suzhou_Zhuozheng_Yuan.jpg?width=1600",
+    alt: "Suzhou classical garden",
+    summary: "Classical gardens, canals, silk culture, old streets, and a relaxed rail trip from Shanghai.",
+    tags: ["Gardens", "Shanghai day trip"],
+    facts: [["Base city", "Suzhou or Shanghai"], ["Time needed", "1-2 days"], ["Best for", "Gardens and canals"], ["Transport", "Rail plus metro"]],
+    externalLabel: "Suzhou official travel",
+    externalUrl: "https://english.suzhou.gov.cn/szsenglish/travel/sz_en_list.shtml",
+    sections: [
+      { title: "Best route", body: ["For a first visit, combine one major classical garden, Pingjiang Road, a canal walk, and Suzhou Museum. The Humble Administrator's Garden is famous but busy; smaller gardens can feel more atmospheric when crowds are heavy."] },
+      { title: "Day trip or overnight", body: ["A day trip from Shanghai is easy, but overnight travelers get quieter mornings and evenings. Choose a hotel near the old city or a metro line, and avoid building a schedule around too many gardens in one day."] },
+      { title: "Practical notes", body: ["Garden tickets and museum reservations can be capacity-controlled. Bring the passport used for booking, keep Chinese names saved for taxis, and check whether your rail station is Suzhou, Suzhou North, or another suburban stop."] }
+    ]
+  },
+  {
+    slug: "guangzhou",
+    name: "Guangzhou",
+    image: "https://commons.wikimedia.org/wiki/Special:FilePath/Canton_Tower_at_night.jpg?width=1600",
+    alt: "Canton Tower and Guangzhou skyline",
+    summary: "Cantonese food, old trading neighborhoods, river views, markets, museums, and Greater Bay links.",
+    tags: ["Food", "Bay Area"],
+    facts: [["Time needed", "2-3 days"], ["Best for", "Food and city life"], ["Transport", "Metro"], ["Add-ons", "Foshan, Hong Kong, Macau"]],
+    externalLabel: "Guangzhou English portal",
+    externalUrl: "https://www.lifeofguangzhou.com/",
+    sections: [
+      { title: "What to do", body: ["Build the trip around dim sum mornings, Shamian Island, Chen Clan Ancestral Hall, Canton Tower, Pearl River views, and old neighborhood food walks. Guangzhou is also useful for sourcing, trade fair visits, and Greater Bay Area routes."] },
+      { title: "Food strategy", body: ["Reserve at least one proper Cantonese meal and one casual food crawl. Morning tea can be crowded on weekends, so go earlier or ask the hotel for local timing advice. Keep allergy and dietary notes translated because menus may be Chinese-first."] },
+      { title: "Transport and stay", body: ["The metro is strong, but the city is large. Stay near Yuexiu, Tianhe, Zhujiang New Town, or the specific market or fair area you need. Guangzhou South Railway Station is useful for Hong Kong, Shenzhen, and wider China rail links."] }
+    ]
+  },
+  {
+    slug: "shenzhen",
+    name: "Shenzhen",
+    image: "https://commons.wikimedia.org/wiki/Special:FilePath/Shenzhen_Skyline_2017.jpg?width=1600",
+    alt: "Shenzhen skyline",
+    summary: "Modern design, coastal escapes, tech districts, creative parks, and simple links to Hong Kong.",
+    tags: ["Modern China", "Hong Kong link"],
+    facts: [["Time needed", "1-3 days"], ["Best for", "Design, coast, tech"], ["Transport", "Metro and rail"], ["Pair with", "Hong Kong or Guangzhou"]],
+    externalLabel: "Shenzhen government travel guide",
+    externalUrl: "https://www.sz.gov.cn/en_szgov/travel/guide/index.html",
+    sections: [
+      { title: "Why add it", body: ["Shenzhen shows a different side of China: young, coastal, design-heavy, and deeply connected to Hong Kong. It is less about ancient sights and more about urban energy, creative districts, seaside routes, museums, and easy Greater Bay movement."] },
+      { title: "Good routes", body: ["Use OCT-LOFT, Nanshan museums, Sea World, Futian city views, and Dapeng coast depending on your style. If crossing from Hong Kong, check the exact border point and rail station before booking hotels."] },
+      { title: "Planning advice", body: ["The city is spread out. Cluster each day by district rather than zigzagging. Beaches and Dapeng areas need more time than the map suggests, especially on weekends."] }
+    ]
+  },
+  {
+    slug: "chongqing",
+    name: "Chongqing",
+    image: "https://commons.wikimedia.org/wiki/Special:FilePath/Chongqing_Night_View.jpg?width=1600",
+    alt: "Chongqing night skyline",
+    summary: "Mountain city streets, hotpot, river views, cyberpunk skylines, and Wulong nature add-ons.",
+    tags: ["Food", "Mountain city"],
+    facts: [["Time needed", "2-4 days"], ["Best for", "Food and city views"], ["Terrain", "Hilly"], ["Add-on", "Wulong"]],
+    externalLabel: "Chongqing official portal",
+    externalUrl: "https://www.ichongqing.info/",
+    sections: [
+      { title: "What makes it special", body: ["Chongqing is vertical, dramatic, and food-driven. Plan for layered streets, river viewpoints, hotpot, night scenes, and neighborhoods where navigation can feel like a puzzle in the best way."] },
+      { title: "How to plan", body: ["Two days can cover city highlights such as Jiefangbei, Hongya Cave area, Liziba, river viewpoints, and food. Add one or two more days for Dazu Rock Carvings, Wulong karst landscapes, or slower neighborhood exploration."] },
+      { title: "Watch-outs", body: ["Distances feel different because of hills, bridges, and stacked roads. Choose a central hotel, save Chinese addresses, and do not overload the day with too many cross-city hops. Spicy food is serious here, so prepare translated dietary notes if needed."] }
+    ]
+  },
+  {
+    slug: "huangshan",
+    name: "Huangshan",
+    image: "https://commons.wikimedia.org/wiki/Special:FilePath/Huangshan_pic_4.jpg?width=1600",
+    alt: "Huangshan mountain peaks",
+    summary: "Granite peaks, sunrise routes, cable cars, hot springs, and ancient Huizhou villages.",
+    tags: ["Mountain", "2-3 days"],
+    facts: [["Time needed", "2-3 days"], ["Best season", "Spring and autumn"], ["Difficulty", "Moderate"], ["Base", "Tunxi or mountain area"]],
+    externalLabel: "Huangshan travel guide",
+    externalUrl: "https://www.huangshan.gov.cn/English/Huangshanscenicplaces/TravelGuide/index.html",
+    sections: [
+      { title: "Best way to visit", body: ["Huangshan rewards an overnight plan. Stay on or near the mountain if sunrise matters, or stay in Tunxi for easier rail access and add Hongcun or Xidi villages for Huizhou architecture."] },
+      { title: "Route planning", body: ["Cable cars reduce climbing but do not remove walking. Weather can change quickly, paths are stepped, and popular sunrise points fill early. Build a backup plan if clouds or rain affect the main viewpoints."] },
+      { title: "Ticket and packing notes", body: ["Check cable car maintenance, scenic area ticket rules, and seasonal access before arrival. Pack layers, rain protection, snacks, and shoes that can handle many stairs. Large luggage is inconvenient on mountain routes."] }
+    ]
+  },
+  {
+    slug: "dunhuang",
+    name: "Dunhuang",
+    image: "https://commons.wikimedia.org/wiki/Special:FilePath/Mogao_Caves,_Dunhuang,_China.jpg?width=1600",
+    alt: "Mogao Caves near Dunhuang",
+    summary: "Mogao Caves, desert dunes, Silk Road history, night markets, and big western China landscapes.",
+    tags: ["Silk Road", "Desert"],
+    facts: [["Time needed", "2-3 days"], ["Best for", "History and desert"], ["Key ticket", "Mogao Caves"], ["Climate", "Dry, big temperature shifts"]],
+    externalLabel: "Dunhuang travel platform",
+    externalUrl: "https://www.chinabound.cn/dunhuang",
+    sections: [
+      { title: "Why go", body: ["Dunhuang is one of the strongest Silk Road stops for travelers who want China beyond big cities. The core is Mogao Caves, then Mingsha Mountain, Crescent Spring, desert sunsets, night markets, and museum context."] },
+      { title: "Ticket strategy", body: ["Mogao Caves require advance planning and visitor flow is controlled. Book early, check whether English interpretation is available for your date, and keep the passport used for booking ready. Do not leave Mogao for the final hours of the trip."] },
+      { title: "Route fit", body: ["Dunhuang pairs best with a wider Gansu or Silk Road route, or as a focused fly-in trip for history lovers. Distances in western China are large, so avoid squeezing it between far-apart cities without checking flight and train timing."] }
+    ]
+  },
+  {
+    slug: "harbin",
+    name: "Harbin",
+    image: "https://commons.wikimedia.org/wiki/Special:FilePath/Harbin_Ice_and_Snow_World.jpg?width=1600",
+    alt: "Harbin Ice and Snow World",
+    summary: "Ice festival season, Russian-influenced streets, winter food, music culture, and snow scenery.",
+    tags: ["Winter", "Ice festival"],
+    facts: [["Best season", "Dec-Feb"], ["Time needed", "2-3 days"], ["Weather", "Very cold"], ["Key area", "Ice and Snow World"]],
+    externalLabel: "Harbin city portal",
+    externalUrl: "https://govt.chinadaily.com.cn/regional/harbin.html",
+    sections: [
+      { title: "When to go", body: ["Harbin is strongest in deep winter, especially around Ice and Snow World and snow-themed events. Exact opening dates and holiday crowd levels matter, so verify current schedules before booking flights."] },
+      { title: "How to prepare", body: ["Cold weather is the main logistics issue. Bring serious layers, gloves that work with phones, warm shoes, and battery backup. Plan shorter outdoor blocks and warm indoor stops."] },
+      { title: "Trip shape", body: ["Use two or three days for the ice park, Central Street, Saint Sophia area, local food, and optional snow activities. Avoid peak public holiday dates if hotel prices and crowds matter."] }
+    ]
   }
 ];
 
