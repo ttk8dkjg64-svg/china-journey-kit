@@ -5,11 +5,12 @@ import { usePathname } from "next/navigation";
 import { useState } from "react";
 
 const nav = [
-  ["Home", "/"],
   ["Destinations", "/destinations"],
-  ["Travel Essentials", "/essentials"],
   ["Itineraries", "/itineraries"],
-  ["Work With Us", "/deals/partner"]
+  ["Travel Essentials", "/essentials"],
+  ["Hotels", "/hotels"],
+  ["Airport Transfers", "/airport-transfers"],
+  ["Private Tours", "/private-tours"]
 ] as const;
 
 export function Header() {
@@ -57,6 +58,9 @@ export function Footer() {
           <h4>Explore</h4>
           <Link href="/destinations">Destinations</Link>
           <Link href="/itineraries">Itineraries</Link>
+          <Link href="/hotels">Hotels</Link>
+          <Link href="/airport-transfers">Airport Transfers</Link>
+          <Link href="/private-tours">Private Tours</Link>
           <Link href="/experiences/culture-food">Culture & Food</Link>
           <Link href="/faq">FAQ</Link>
         </div>
@@ -68,8 +72,8 @@ export function Footer() {
         </div>
         <div>
           <h4>Business</h4>
+          <Link href="/company/contact">Plan My Trip</Link>
           <Link href="/deals/partner">Partner Plan</Link>
-          <Link href="/company/contact">Contact</Link>
           <Link href="/sitemap.xml">Sitemap</Link>
         </div>
         <div>

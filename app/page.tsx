@@ -8,7 +8,7 @@ export default function HomePage() {
     ["Arrival Setup", "Get mobile data, payment apps, hotel address, and airport-to-city transport ready before the flight."],
     ["Route Shape", "Choose a realistic city order around high-speed rail, flight time, weather, and recovery days."],
     ["Ticket Timing", "Reserve passport-linked attractions early and keep official links close for policy checks."],
-    ["Local Backup", "Know when to use hotel help, guided days, private transfers, or vetted booking support."]
+            ["Local Backup", "Know when to use hotel help, guided days, private transfers, or vetted booking support."]
   ];
   const tripStyles = [
     ["First China Trip", "Beijing, Xi'an, Shanghai, then one nature stop if the schedule allows.", "/itineraries"],
@@ -24,16 +24,16 @@ export default function HomePage() {
       <section className="hero">
         <div className="wrap hero-grid">
           <div>
-            <h1>China travel, made China-ready.</h1>
-            <p>Build a confident China trip with attraction guides, official booking links, payment setup, high-speed rail tips, hotel advice, ticket strategy, and practical routes for first-time visitors.</p>
+            <h1>Plan your first China trip with confidence</h1>
+            <p>Practical China travel help for first-time visitors: payments, hotels, high-speed trains, airport transfers, itineraries, and visa-free routes.</p>
             <div className="hero-actions">
-              <Link className="button primary" href="/itineraries">Build an itinerary</Link>
-              <Link className="button" href="/essentials">Solve payments, SIM and trains</Link>
+              <Link className="button primary" href="/company/contact">Plan My China Trip</Link>
+              <Link className="button" href="/essentials">Read the China Travel Checklist</Link>
             </div>
             <div className="stat-strip">
-              <div className="stat"><strong>{destinations.length}</strong><span>high-demand destinations</span></div>
-              <div className="stat"><strong>6</strong><span>arrival pain points solved</span></div>
-              <div className="stat"><strong>0</strong><span>empty navigation links</span></div>
+              <div className="stat"><strong>70%</strong><span>professional travel preparation content</span></div>
+              <div className="stat"><strong>20%</strong><span>itinerary and service consultation</span></div>
+              <div className="stat"><strong>10%</strong><span>booking and partner entry points</span></div>
             </div>
           </div>
           <HeroDestinationCarousel destinations={destinations} />
@@ -56,7 +56,7 @@ export default function HomePage() {
           <div className="section-head">
             <div>
               <h2>Most Wanted China Stops</h2>
-              <p>Start with the places travelers ask for most, then use the linked guides for timing, tickets, routes, and trip-fit advice.</p>
+              <p>Start with high-demand cities and sights, then use each guide for timing, tickets, transfers, hotel areas, and trip-fit advice.</p>
             </div>
             <Link className="button" href="/destinations">See all guides</Link>
           </div>
@@ -82,6 +82,34 @@ export default function HomePage() {
                 <p>{copy}</p>
               </article>
             ))}
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div className="wrap">
+          <div className="section-head">
+            <div>
+              <h2>Service Help Without Becoming a Booking Mall</h2>
+              <p>These pages are built as practical advice first, then a light consultation and affiliate path where travelers need real help.</p>
+            </div>
+          </div>
+          <div className="grid cols-3">
+            <Link className="style-card" href="/hotels">
+              <h3>Hotels</h3>
+              <p>Choose areas that reduce check-in friction, airport stress, metro transfers, and passport-registration surprises.</p>
+              <span>Find hotel strategy</span>
+            </Link>
+            <Link className="style-card" href="/airport-transfers">
+              <h3>Airport Transfers</h3>
+              <p>Know when metro, taxi, ride-hailing, hotel pickup, or private transfer makes the most sense after a long flight.</p>
+              <span>Plan arrival</span>
+            </Link>
+            <Link className="style-card" href="/private-tours">
+              <h3>Private Tours</h3>
+              <p>Use guided days where language, tickets, distance, or family pacing makes self-guided travel less efficient.</p>
+              <span>Compare tour help</span>
+            </Link>
           </div>
         </div>
       </section>
@@ -125,7 +153,7 @@ export default function HomePage() {
           <div className="section-head">
             <div>
               <h2>Get Help Planning Your China Trip</h2>
-              <p>When the basics feel hard, use the planning request to get route advice, ticket guidance, local experience ideas, and arrival setup support.</p>
+              <p>When payments, trains, hotels, tickets, airport arrival, and route order feel messy, use the planning request to turn the trip into a clear next step.</p>
             </div>
             <Link className="button dark" href="/company/contact">Request trip help</Link>
           </div>
