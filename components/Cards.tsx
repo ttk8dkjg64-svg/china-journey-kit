@@ -17,6 +17,7 @@ export function DestinationCard({ destination, compact = false }: { destination:
         )}
         <div className="external-row">
           <Link className="card-link" href={`/destinations/${destination.slug}`}>{compact ? "Open guide" : "Read guide"}</Link>
+          <Link className="card-link" href={`/company/contact?destination=${encodeURIComponent(destination.name)}&package=Custom%20Itinerary`}>Plan this stop</Link>
           <a className="card-link" href={destination.externalUrl} target="_blank" rel="noopener noreferrer">{destination.externalLabel}</a>
         </div>
       </div>

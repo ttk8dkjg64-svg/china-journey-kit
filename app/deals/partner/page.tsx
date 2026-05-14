@@ -1,5 +1,6 @@
 import { LeadForm } from "@/components/LeadForms";
 import { PageHero } from "@/components/PageBlocks";
+import { Suspense } from "react";
 
 export default function PartnerPage() {
   return (
@@ -32,7 +33,11 @@ export default function PartnerPage() {
               <li>Transparent disclosure for sponsored or referral-based placements.</li>
             </ul>
           </article>
-          <aside className="sidebar"><LeadForm type="partner" /></aside>
+          <aside className="sidebar">
+            <Suspense fallback={<div className="card pad">Loading inquiry form...</div>}>
+              <LeadForm type="partner" />
+            </Suspense>
+          </aside>
         </div>
       </section>
     </>
